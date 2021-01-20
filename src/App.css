@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#AppGridContainer {
   display: flex;
+  align-items: stretch;
+  position: absolute;
   flex-direction: column;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+#AppGridItems {
+  scroll-behavior: smooth;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+#header {
+  text-align: center;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#headerOverlay {
+  background-color: rgba(43, 43, 38, 0.81);
+  position: absolute;
+  height: 300px;
+  width: 100%;
+}
+
+#headerText {
   color: white;
+  position: absolute;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+#aboutMe {
+  background-image: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 4fr;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#aboutMeText {
+  text-align: left;
+  font-family: 'Montserrat';
+  padding-right: 40px;
 }
+
+#education {
+  background-image: linear-gradient(to right, #667eea , #764ba2);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 2fr;
+  text-align: left;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 400px;
+}
+
+#educationText {
+  text-align: left;
+  font-family: 'Montserrat';
+  padding-left: 40px;
+}
+
+*:focus {
+  outline: none;
+}
+
+#workExperience {
+  background-image: linear-gradient(to right, #09203f, #537895);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 400px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Montserrat";
+}
+
+#projects {
+  background-image: linear-gradient(to right, #fdfbfb, #ebedee);
+  font-family: 'Montserrat';
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 400px;
+  width: 100%;
+  color: rgba(0,0,0, 0.85);
+}
+
+.workexpCard {
+  background-image: linear-gradient(to top, #ffffff , #f7edd2);
+  color: rgba(0,0,0, 0.81);
+}
+
+#projectItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
