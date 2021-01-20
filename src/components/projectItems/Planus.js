@@ -5,6 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from "@material-ui/core/Typography";
+import {resolveImagePath} from "../../functions/path";
 
 export default class Planus extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ export default class Planus extends React.Component {
                         component="img"
                         alt="PlaNUS demo"
                         height="200"
-                        src={"images/planusdemo.png"}
+                        src={resolveImagePath("images/planusdemo.png")}
                         title="PlaNUS demo"
                         />
                         <CardContent>

@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from "@material-ui/core/Typography";
 import {Avatar} from "@material-ui/core";
+import {resolveImagePath} from "../../functions/path";
 
 export default class TimeBook extends React.Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class TimeBook extends React.Component {
                         component="img"
                         alt="TimeBook demo"
                         height="200"
-                        image={"images/timebookdemo.png"}
+                        image={resolveImagePath("images/timebookdemo.png")}
                         title="TimeBook demo"
                         />
                         <CardContent>

@@ -1,0 +1,19 @@
+{
+  "work_experience": [
+    {
+      "title": "Full-stack Mobile Application Developer for Healthcare Platform (SIP) (Full-time)",
+      "duration": "May 2020 - August 2020",
+      "description": ["Developed a mobile application from scratch using ReactNative for frontend and Python Flask for backend."]
+    },
+    {
+      "title": "Tutor, National University of Singapore, Singapore (Part Time)",
+      "duration": "August 2019 - November 2019",
+      "description": ["Guided and managed a group of Computer Science freshmen on a  course (CS1101S) about programming methodology."]
+    },
+    {
+      "title": "Intern, Institute of Molecular Cell Biology, Singapore (Full-time)",
+      "duration": "November 2014 - December 2014",
+      "description": ["Assistant for a bioinformatics researcher.", "Helped with experiments and consolidated data  using HOMER bioinformatics software."]
+    }
+  ]
+}
